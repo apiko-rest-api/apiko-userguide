@@ -1,5 +1,7 @@
 # Installation and setup
 
+## Installing the CLI tool
+
 To help you get started with Apiko, we've built a convenient CLI tool. Get it using [NPM](https://docs.npmjs.com/getting-started/installing-node):
 
 `npm i -g apiko-cli`
