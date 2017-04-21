@@ -61,3 +61,20 @@ The configuration object passed to the `Apiko.run(options)` function may contain
 </table>
 
 The port to run Apiko on. Should be higher than 1024, make sure it is available on your system.
+
+### verbosity
+
+<table>
+<thead><tr><th>Type</th><th>Default</th></tr></thead>
+<tbody><tr><td>Number</td><td>1</td></tr></tbody>
+</table>
+
+Defines how detailed messages should be output while Apiko server is running. Can be a number between 0 and 3:
+
+<table>
+<thead><tr><th>Log level</th><th>Description</th></tr></thead>
+<tbody><tr><td>0</td><td>Only fatal errors</td></tr></tbody>
+<tbody><tr><td>1</td><td>Important runtime messages and errors</td></tr></tbody>
+<tbody><tr><td>2</td><td>All runtime messages, warnings and errors</td></tr></tbody>
+<tbody><tr><td>3</td><td>Everything, including dumps and database queries</td></tr></tbody>
+</table>
