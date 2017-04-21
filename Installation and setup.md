@@ -48,4 +48,5 @@ You can use a REST API testing tool of your choice.
 ## What's next
 
 - With the starter configuration, the server data are stored in an SQLite database (which can be found as a file in the project's root directory). You may want to set up your Apiko server for a different kind of database, see the [Configuration](Configuration.md) page for more information.
+- Apiko contains several built-in features for you to save your time, have a look at the [core endpoints](Core%20endpoints%20(built-in%20features).md).
 - Once you need to move beyond the Apiko's out of box features that can be set up using the **developer UI** and configuration file, [custom endpoint handlers](Custom%20endpoint%20handlers.md) are a way to go.
