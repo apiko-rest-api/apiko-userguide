@@ -39,11 +39,11 @@ Where `dev` can be swapped for your environment set of configuration (`dev` or `
 
 ## Testing endpoints
 
-All the endpoints you can see in the Apiko configuration / developer UI are by default available under http://localhost:5000/api/...
+All the endpoints you can see in the Apiko configuration / developer UI are by default available under http://localhost:5000/...
 
 You can use a REST API testing tool of your choice.
 
 ## What's next
 
-- With the starter configuration, the server data are stored in an SQLite database (which can be found as a file in the project's root directory). You may want to set up your Apiko server for a different kind of database, see the Configuration page for more information.
+- With the starter configuration, the server data are stored in an SQLite database (which can be found as a file in the project's root directory). You may want to set up your Apiko server for a different kind of database, see the [Configuration](Configuration.md) page for more information.
 - Once you need to move beyond the Apiko's out of box features that can be set up using the developer UI and configuration file, custom endpoint handlers are a way to go.
