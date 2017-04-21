@@ -62,6 +62,15 @@ The configuration object passed to the `Apiko.run(options)` function may contain
 
 The port to run Apiko on. Should be higher than 1024, make sure it is available on your system.
 
+### prefix
+
+<table>
+<thead><tr><th>Type</th><th>Default</th></tr></thead>
+<tbody><tr><td>String</td><td>(no prefix)</td></tr></tbody>
+</table>
+
+Puts all your endpoints after a prefix. For example, if `api` (**no slashes!**) will be the value of this option, all your endpoints will be under `http://localhost:5000/api/...` with the starter configuration.
+
 ### verbosity
 
 <table>
