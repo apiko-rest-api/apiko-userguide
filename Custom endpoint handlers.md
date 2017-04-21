@@ -57,7 +57,7 @@ There are 3 types of request parameters an endpoint can rececive:
 
 Provide the output of a core handler in case of handler extension. Please see **Overriding core endpoint handlers**.
 
-## Overriding core endpoint handlers
+## Extending core endpoint handlers
 
 Certain core endpoint handlers can be extended, the following example will extend the default user registration handler:
 
