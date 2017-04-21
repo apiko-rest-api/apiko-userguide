@@ -12,8 +12,52 @@ Apiko setup is what you can edit and configure in the **developer UI**, which is
 - Configuration of access to the available endpoints.
 - Documentation of your endpoints.
 
-There's a question mark icon (?) in the developer UI menu that turns on and off the in-place documentation, which should help you with setting up everything mentioned.
+There's a question mark icon **(?)** in the developer UI menu that turns on and off the in-place documentation, which should help you with setting up everything mentioned.
 
 These are the things you configure the most often in Apiko (it's the definition of your API) and that's why the developer UI exists - to make it simple and fast for you. Chances are good that you are already viewing this guide from the developer UI.
 
 In fact the output of the developer UI is what we call **Apiko setup** (as mentioned earlier) and is stored in a **JSON format that you should never need to understand** in the `apiko.json` file in your project's root directory.
+
+# Apiko configuration
+
+## Environments
+
+Whenever you start the Apiko server using the CLI tool:
+
+`apiko run <environment>`
+
+What you pass in the **environment** argument is what you will receive as the third argument in your **main.js** file. With this in mind, you can then use simple `if` to define different configurations for different environments, for example:
+
+```
+var Apiko = require('apiko')
+
+var config = {
+  port: 5000
+}
+
+if (process.argv[2] === 'prod') {
+  // ...
+}
+
+if (process.argv[2] === 'dev') {
+  config.protect = falseD
+  config.verbosity = 2
+}
+
+Apiko.run(config)
+```
+
+Note: The starter configuration contains `prod` and `dev` environments, but you can define any amount of environments with any names.
+
+## Configuration options
+
+The configuration object passed to the `Apiko.run(options)` function may contain the following options:
+
+### port
+
+<table>
+<thead><tr><th>Type</th><th>Default</th></tr></thead>
+<tbody><tr><td>Number</td><td>5000</td></tr></tbody>
+</table>
+
+The port to run Apiko on. Should be higher than 1024, make sure it is available on your system.
