@@ -26,4 +26,10 @@ A list of existing users can be retrieved with `GET /users`.
 
 ## Files
 
-To be written...
+The files endpoints are designed to help you store files on your API server.
+
+Uploading files is done by sending a multipart request body (the actual file(s)) to `POST /files`.
+
+Downloading / getting a file can be performed with `GET /files/:id`. Apiko will automatically set the `Content-Type` HTTP header to the [MIME type](https://en.wikipedia.org/wiki/MIME) of the requested file.
+
+Listing of uploaded files can be done with `GET /files`.
