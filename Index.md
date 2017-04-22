@@ -15,6 +15,8 @@ If you have any questions that are not covered in the following topics, please p
     - [Apiko Configuration](Configuration.md#apiko-configuration)
         - [Environments](Configuration.md#environments)
         - [Configuration options](Configuration.md#configuration-options)
+            - [db](Configuration.md#db)
+            - [filesDirectory](Configuration.md#filesdirectory)
             - [port](Configuration.md#port)
             - [prefix](Configuration.md#prefix)
             - [verbosity](Configuration.md#verbosity)
