@@ -53,6 +53,15 @@ Note: The starter configuration contains `prod` and `dev` environments, but you 
 
 The configuration object passed to the `Apiko.run(options)` function may contain the following options:
 
+### filesDirectory
+
+<table>
+<thead><tr><th>Type</th><th>Default</th></tr></thead>
+<tbody><tr><td>String</td><td>'files'</td></tr></tbody>
+</table>
+
+Sets a directory name in which the uploaded files will be stored. This directory will be automatically created under your API server project's root.
+
 ### port
 
 <table>
