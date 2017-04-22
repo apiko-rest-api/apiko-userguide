@@ -71,6 +71,15 @@ The port to run Apiko on. Should be higher than 1024, make sure it is available 
 
 Puts all your endpoints after a prefix. For example, if `api` (**no slashes!**) will be the value of this option, all your endpoints will be under `http://localhost:5000/api/...` with the starter configuration.
 
+### protect
+
+<table>
+<thead><tr><th>Type</th><th>Default</th></tr></thead>
+<tbody><tr><td>Boolean</td><td>true</td></tr></tbody>
+</table>
+
+If true, sensitive core Apiko endpoints have to be requested with a `secret` parameter containing the server's secret (which can be found in `apiko.json`). This protects your API server from being manipulated by anyone who doesn't know the *secret*, you should set this option to `true` for production.
+
 ### verbosity
 
 <table>
