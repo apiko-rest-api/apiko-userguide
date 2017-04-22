@@ -53,6 +53,36 @@ Note: The starter configuration contains `prod` and `dev` environments, but you 
 
 The configuration object passed to the `Apiko.run(options)` function may contain the following options:
 
+### db
+
+<table>
+<thead><tr><th>Type</th><th>Default</th></tr></thead>
+<tbody><tr><td>Object</td><td>
+{
+  dialect: 'sqlite',
+  host: 'localhost',
+  user: 'root',
+  pass: 'root',
+  storage: 'datastore.sqlite'
+}
+</td></tr></tbody>
+</table>
+
+Database configuration option - is an object, which may contain the following properties:
+
+<table>
+<thead><tr><th>Property</th><th>Type</th><th>Default</th><th>Description</th></tr></thead>
+<tbody>
+  <tr><td>dialect</td><td>String</td><td>'sqlite'</td><td>Database type to connect to.</td><td></td></tr>
+  <tr><td>host</td><td>String</td><td>'localhost'</td><td>Database server address to connect to.</td><td></td></tr>
+  <tr><td>user</td><td>String</td><td>'root'</td><td>Database user to connect with.</td><td></td></tr>
+  <tr><td>pass</td><td>String</td><td>'root'</td><td>Database password to connect with.</td><td></td></tr>
+  <tr><td>storage</td><td>String</td><td>'datastore.sqlite'</td><td>Database file to open (SQLite only).</td><td></td></tr>
+</tbody>
+</table>
+
+Apiko uses the [Sequelize.js library](https://github.com/sequelize/sequelize) for database management. Sequelize supports the following database dialects: `sqlite`, `mysql`, `mariadb`, `postgres`, `mssql` (any of these can be the value of the `dialect` property). For any database dialect other than `sqlite` the `host`, `user` and `pass` properties have to be specified. For the `sqlite` database dialect the `storage` property has to be specified supplying the name of the database file, which will be created under your API server's project root.
+
 ### filesDirectory
 
 <table>
