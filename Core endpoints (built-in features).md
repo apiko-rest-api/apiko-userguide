@@ -20,7 +20,7 @@ Literal logout is [not available](https://github.com/apiko-rest-api/apiko/issues
 
 It is generally considered a better practice to deactivate users rather than deleting them, so the `DELETE /users` endpoint is not implemented by default.
 
-If a user forgets their password, the 'POST /users/password/reset/:id' can be used to send a password reset email (in case the user's `username` property contains a valid email address). This endpoint generates a new random password, which will allow the user to log into their account and change their password in the settings (if your application will allow it).
+If a user forgets their password, the `POST /users/password/reset/:id` can be used to send a password reset email (in case the user's `username` property contains a valid email address). This endpoint generates a new random password, which will allow the user to log into their account and change their password in the settings (if your application will allow it).
 
 A list of existing users can be retrieved with `GET /users`.
 
