@@ -40,7 +40,7 @@ if (process.argv[2] === 'prod') {
 }
 
 if (process.argv[2] === 'dev') {
-  config.protect = falseD
+  config.protect = false
   config.verbosity = 2
 }
 
